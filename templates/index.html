@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" style="padding-top: 80px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Minesweeper</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    
+    
+    
+    <style>
+       
+
+        td{
+            border: 5px solid darkgray;
+            height:50px;
+            width:50px;
+        }
+        ta{
+            border: 5px solid white;
+            height:100px;
+            width:50px;
+        }
+        tb{
+            border: 5px solid darkgray;
+            background: black;
+            height:100px;
+            width:200px;
+        }
+        tc{
+            border: 5px solid darkgray;
+            background: solid darkgray;
+            height:100px;
+            width:200px;
+        }
+
+    </style>
+    
+</head>
+
+<body onload="timert();">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Minesweeper</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <main role="main">
+        <div style="align-content: center;" class="container">    
+            <button style=" margin-left:auto; margin-right:auto" class = "btn btn-primary" id = "resetBtn">Reset Game</button>
+            <ta style="padding-right: 30px;"></ta>
+            <tb style="font-size: 32px;  align-content: left; color:red"  id="mines"></tb> 
+            <tc style="font-size: 32px; align-content: center;" id="face"></tc>  
+            <tb style="align-content: center;  font-size: 32px;  color:red" id="timer"></tb>
+            
+            <table id="grid"> 
+            </table>
+            <br><br>
+           
+        </div>
+    </main>
+
+</body>
+
+</html>
